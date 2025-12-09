@@ -1,0 +1,178 @@
+/* =========================
+  Global Styles
+========================= */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #f4f7fa;
+  color: #111;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+  animation: fadeIn 0.8s ease-in;
+}
+
+/* =========================
+  Headings
+========================= */
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #4B6CB7;
+  font-size: 2rem;
+}
+
+h2 {
+  margin-top: 20px;
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+/* =========================
+  Inputs & Buttons
+========================= */
+input, select {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+  border-color: #4B6CB7;
+  box-shadow: 0 0 8px rgba(75,108,183,0.3);
+  outline: none;
+}
+
+button {
+  padding: 12px 20px;
+  margin-top: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #4B6CB7, #182848);
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(90deg, #182848, #4B6CB7);
+}
+
+/* =========================
+  Activities List
+========================= */
+#activitiesList {
+  margin-top: 20px;
+}
+
+.activity-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f0f4ff;
+  padding: 12px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  animation: fadeInUp 0.5s ease;
+}
+
+.activity-card button {
+  width: 60px;
+  margin-left: 8px;
+  padding: 6px;
+  font-size: 0.85rem;
+}
+
+/* =========================
+  Dashboard Charts
+========================= */
+canvas {
+  margin-top: 20px;
+  border-radius: 10px;
+  background: #f7f9fc;
+  padding: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* =========================
+  No Data Available Screen
+========================= */
+#noData {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.2rem;
+  color: #888;
+  animation: fadeIn 0.8s ease-in;
+}
+
+/* =========================
+  Responsive Design
+========================= */
+@media (max-width: 768px) {
+  .container {
+    margin: 20px;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button, input, select {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  button, input, select {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .activity-card {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .activity-card button {
+    width: 100%;
+    margin: 5px 0 0 0;
+  }
+}
+
+/* =========================
+  Animations
+========================= */
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}

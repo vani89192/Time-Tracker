@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Tracker - Activities</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Daily Activities</h1>
+    
+    <input type="date" id="activityDate">
+    
+    <input type="text" id="activityTitle" placeholder="Activity Name">
+    <input type="number" id="activityDuration" placeholder="Duration in minutes">
+    <select id="activityCategory">
+      <option value="Work">Work</option>
+      <option value="Study">Study</option>
+      <option value="Sleep">Sleep</option>
+      <option value="Entertainment">Entertainment</option>
+      <option value="Exercise">Exercise</option>
+    </select>
+    
+    <button id="addActivity">Add Activity</button>
+    <p id="remainingTime">Remaining minutes: 1440</p>
+    
+    <h2>Activities List</h2>
+    <div id="activitiesList"></div>
+    
+    <button id="analyseBtn" disabled>Analyse</button>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>

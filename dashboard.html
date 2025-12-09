@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Tracker - Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Daily Dashboard</h1>
+
+    <label for="dashboardDate">Select Date:</label>
+    <input type="date" id="dashboardDate">
+
+    <div id="noData" style="display:none; text-align:center; margin-top:50px;">
+      <p>📅 No data available for this day.</p>
+      <p>Start logging your activities now!</p>
+    </div>
+
+    <div id="chartsContainer" style="display:none;">
+      <h2>Summary</h2>
+      <p id="totalHours"></p>
+      <p id="totalActivities"></p>
+
+      <div style="max-width:600px; margin:auto;">
+        <canvas id="pieChart"></canvas>
+      </div>
+
+      <div style="max-width:600px; margin:auto; margin-top:50px;">
+        <canvas id="barChart"></canvas>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="dashboard.js"></script>
+</body>
+</html>
