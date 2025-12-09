@@ -6,100 +6,62 @@ This project demonstrates the use of Firebase Authentication + Firestore, JavaSc
 
 🔗 Live Links
 
-Live Demo: Paste your deployed link here
-
-GitHub Repo: Paste your repository link here
-
-Video Walkthrough: YouTube/Drive video link here
-
+Live Demo:https://vani89192.github.io/Time-Tracker/
+GitHub Repo: https://github.com/vani89192/Time-Tracker#
+Video Walkthrough: https://drive.google.com/file/d/1gzltLNkwBlucnLrGYZmaG2_FJQv83dtp/view?usp=sharing
 🎯 Overview
 
 This Time Tracker app helps users understand how their daily routine is divided into activities. It enforces a complete 24-hour cycle (1440 minutes) before analysis for accurate visualization.
 
 Users can:
-
 Login/Signup using Firebase
-
 Add daily activities with time and category
-
 Track remaining minutes
-
 View analytics once total time = 1440 mins
-
 See graphs and insights in dashboard
 
 🛠️ Tech Stack
 Frontend
-
 HTML5
-
 CSS3
-
 JavaScript (ES Modules)
-
 Chart.js
-
 Backend
-
 Firebase Authentication
-
 Firebase Firestore Database
 
 ✨ Features
 🔐 Authentication
-
 Email/Password login
-
 Firebase Auth session management
-
 Auto redirect:
-
 Logged-in users → Activities Page
-
 Logged-out users → Login Page
 
 📝 Activity Tracking
-
 Add activities with:
-
 Title
-
 Duration (minutes)
-
 Category (Work, Study, Sleep, Entertainment, Exercise)
-
 See remaining minutes (1440 - used mins)
-
 Activities update automatically when date changes
 
 📊 Dashboard Analytics
-
 Activated only when total = 1440 mins:
-
 Pie chart of categories
-
 Bar chart comparison by duration
-
 Clear visualization of time usage
 
 🚫 No Data State
-
 If activities do not reach 1440 mins:
-
 Analyse button disabled
-
 Dashboard shows “No analysis available yet”
 
 🧭 User Flow
-
 User logs in
-
 Selects a date
-
 Adds activities
-
 Total reaches 1440 mins
-
 Clicks Analyse
 
 Dashboard shows charts
@@ -122,15 +84,10 @@ git clone https://github.com/YOUR_USERNAME/REPO.git
 cd REPO
 
 2️⃣ Firebase Setup
-
 Go to https://console.firebase.google.com
-
 Create a project
-
 Enable Email/Password Auth
-
 Enable Cloud Firestore
-
 Copy the configuration
 
 Paste config into firebase.js:
@@ -153,67 +110,36 @@ export const auth = getAuth(app);
 export const db = getFirestore(app);
 
 3️⃣ Run Locally
-
 Open the folder in VS Code
-
 Install Live Server Extension
-
 Right-click index.html → Open with Live Server
 
 🎥 Video Walkthrough (2–5 min)
-
 Your video should include:
-
 Demo Flow
-
 Signup & Login
-
 Adding activities
-
 Remaining time decreasing
-
 Analyse unlocks at 1440 minutes
-
 Dashboard showing Pie & Bar charts
-
 “No Data” state before 1440
-
 Mention AI help in:
-
 Code structure
-
 Debugging errors
-
 UI improvements
 
 🖼️ Screenshots (Optional)
-
-You can add:
-
-Login Page
-
-Activities Page
-
-Remaining Minutes
-
-Analyse Button Enabled
-
-Dashboard Pie Chart
-
-Dashboard Bar Chart
+<img width="1920" height="1080" alt="Screenshot 2025-12-09 225217" src="https://github.com/user-attachments/assets/9dac7ca0-63c0-42a4-85c3-e21070055c28" />
+<img width="1920" height="1080" alt="Screenshot 2025-12-09 225307" src="https://github.com/user-attachments/assets/76a574e7-2ba5-49c4-a040-d134b3283d82" />
+<img width="1920" height="1080" alt="Screenshot 2025-12-09 225346" src="https://github.com/user-attachments/assets/c2391d0f-b08a-4fbf-9be8-46c5d6856666" />
+<img width="1920" height="1080" alt="Screenshot 2025-12-09 225408" src="https://github.com/user-attachments/assets/d3158b07-9f1e-4bcc-b3fb-ef85f4632362" />
 
 🚀 Future Improvements
-
 Export daily report as PDF
-
 Custom categories
-
 Weekly/monthly analytics
-
 Edit/delete activities
-
 Dark mode UI
-
 Mobile responsive design
 
 🙌 Credits
